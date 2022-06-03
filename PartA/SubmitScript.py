@@ -31,9 +31,6 @@ if __name__ == '__main__':
         shaHashed = shaHash.hexdigest()
         openedFile.close()
         print("First 5 SHAsum: "+ shaHashed[:5])
-        secret2 = '12345678901234567890'
-        secret2 = b32encode(bytearray(secret2,'ascii')).decode('utf-8')
-        print(totp(secret2))
     else:
         #data
         body = {
