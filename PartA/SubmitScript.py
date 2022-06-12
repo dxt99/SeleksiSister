@@ -35,13 +35,13 @@ if __name__ == '__main__':
         #data
         body = {
                 "fullName" : "Frederik Imanuel Louis",
-                "link"     : "https://drive.google.com/drive/folders/1_x30uA5XYF1EtwvSddlnAGJwzBJ-DgTV?usp=sharing",
-                "message"  : "https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria"
+                "link"     : "https://github.com/dxt99/OtonashiMaria",
+                "message"  : "https://myanimelist.net/anime/35838/Shoujo_Shuumatsu_Ryokou"
         }
         headers = {
             "Content-Type" : "application/json",
             "Authorization": "Basic ",
-            "Content-Length": "211"
+            "Content-Length": "157"
         }
 
         #otp
@@ -51,7 +51,7 @@ if __name__ == '__main__':
         headers["Authorization"] += authToken
         print(headers["Authorization"])
         #request
-        url = "http://svr.suggoi.fun:42069/submit/a"
+        url = "http://svr.suggoi.fun:42069/submit/b"
         req = requests.post(url, json=body, headers=headers)
         print(req.status_code)
         print(req.text)
